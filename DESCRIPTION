@@ -1,0 +1,36 @@
+Package: rhts
+Title: Refined Hierarchical and Grouped Time Series
+Version: 1.0
+Authors: Huilin Zhang, Jinan Zhang, Bohan Cui, Leyi Cao
+Description: Use C++ and RcppArmadillo to improve the speed and performance of hts, which provides methods for analysing and forecasting hierarchical and grouped time series. The available forecast methods include bottom-up, top-down, optimal combination reconciliation and trace minimization reconciliation.
+Depends:
+    R (>= 3.2.0),
+    forecast (>= 8.12)
+Imports:
+    SparseM,
+    Matrix,
+    parallel,
+    utils,
+    methods,
+    graphics,
+    grDevices,
+    stats
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown,
+    covr
+LinkingTo: 
+    Rcpp (>= 0.11.0),
+    RcppEigen,
+    RcppArmadillo
+LazyLoad: yes
+LazyData: yes
+ByteCompile: TRUE
+URL: https://pkg.earo.me/hts/
+BugReports: https://github.com/earowang/hts/issues
+License: GPL (>= 2)
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE, roclets=c('rd', 'collate', 'namespace'))
+Encoding: UTF-8
